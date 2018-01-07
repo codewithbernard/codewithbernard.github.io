@@ -17,7 +17,7 @@
     "email": "feedback@startbootstrap.com"
   },
   "scripts": {
-    "start": ""
+    "start": "echo starting"
   },
   "license": "MIT",
   "author": "Start Bootstrap",
