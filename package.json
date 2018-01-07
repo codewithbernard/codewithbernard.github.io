@@ -16,6 +16,9 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
     "email": "feedback@startbootstrap.com"
   },
+  "scripts": {
+    "start": ""
+  },
   "license": "MIT",
   "author": "Start Bootstrap",
   "contributors": [
