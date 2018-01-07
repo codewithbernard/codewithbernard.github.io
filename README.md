@@ -1,1 +1,3 @@
-# [Resume page created with template](https://startbootstrap.com/template-overviews/resume/)
+# [Resume page based on template]
+
+https://startbootstrap.com/template-overviews/resume/
