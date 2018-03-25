@@ -1,0 +1,19 @@
+.portfolio-button {
+  background-color: #495057 !important;
+  border: none !important;
+}
+
+.portfolio-button:hover {
+  background-color: #bd5d38 !important;
+  border: none !important;
+}
+
+.portfolio-button:active {
+  background-color: #bd5d38 !important;
+  border: none !important;
+}
+
+.portoflio-item-image {
+  width: 75% !important;
+  margin-left: 12.5% !important;
+}

@@ -22,6 +22,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 
   <!-- Icon -->
   <link rel="icon" href="img/icon.png">
@@ -277,24 +278,38 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
       <div class="my-auto">
         <h2 class="mb-5">Portfolio</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-angle-double-right text-warning"></i>
-            <a href="http://emaily-prod.herokuapp.com" target="_blank">Emaily - Creating email campaigns</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-angle-double-right text-warning"></i>
-            <a href="http://cinamon.herokuapp.com" target="_blank">Cinamon - Managing recipes and creating meal plans</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-angle-double-right text-warning"></i>
-            <a href="https://yifab.herokuapp.com/" target="_blank">Yifab - Displaying worst restaurants in town</a>
-          </li>
-          <li>
-            <i class="fa-li fa fa-angle-double-right text-warning"></i>
-            <a href="http://lulaby.herokuapp.com/" target="_blank">Lulaby - Find people in your location with similar listening habits</a>
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <img class="portoflio-item-image card-img-top" src="/img/emaily.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Emaily</h5>
+                <p class="card-text">Create email campaigns, choose your audiance and send bulk emails</p>
+                <a href="https://github.com/codewithbernard/emaily" class="btn btn-primary portfolio-button">Explore on Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img class="portoflio-item-image card-img-top" src="/img/yifab.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Yifab</h5>
+                <p class="card-text">Discover worst restaurants in the given city. According to Yelp</p>
+                <a href="https://yifab.herokuapp.com/" class="btn btn-primary portfolio-button">Explore on Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img class="portoflio-item-image card-img-top" src="/img/lulaby.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lullaby</h5>
+                <p class="card-text">Find people around you with similar listening habits than you</p>
+                <a href="http://lulaby.herokuapp.com" class="btn btn-primary portfolio-button">Explore on Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
