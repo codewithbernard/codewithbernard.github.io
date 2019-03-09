@@ -1,0 +1,7 @@
+const MAYA_BLUE = "#65C9FF"
+const SUMMER_SKY = "#29B4FF"
+const WHITE = "#FFFFFF"
+const BLACK = "#1C1C1C"
+const DARK_GRAY = "#373C46"
+
+export { MAYA_BLUE, SUMMER_SKY, WHITE, BLACK, DARK_GRAY }
