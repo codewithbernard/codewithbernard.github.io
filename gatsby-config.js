@@ -39,6 +39,7 @@ module.exports = {
           "@components": path.resolve(__dirname, "src/components"),
           "@constants": path.resolve(__dirname, "src/constants"),
           "@UI": path.resolve(__dirname, "src/components/UI"),
+          "@assets": path.resolve(__dirname, "src/assets"),
         },
         extensions: ["js"],
       },

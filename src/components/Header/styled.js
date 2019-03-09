@@ -32,22 +32,17 @@ const Nav = styled.nav`
   }
 `
 
-const H2 = styled.h2`
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 48px;
-  color: ${COLORS.DARK_GRAY};
-`
-
 const StyledHeader = styled.header`
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 
   @media screen and (min-device-width: 1200px) {
     justify-content: space-between;
+    margin-top: 2.5rem;
   }
 `
 
-export { Nav, H2, StyledHeader }
+export { Nav, StyledHeader }

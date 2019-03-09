@@ -1,9 +1,9 @@
 import React from "react"
 
-import { H2 } from "./styled"
+import logo from "@assets/logo.svg"
 
 const Logo = () => {
-  return <H2>BernardB.</H2>
+  return <img src={logo} alt="logo" />
 }
 
 export default Logo
