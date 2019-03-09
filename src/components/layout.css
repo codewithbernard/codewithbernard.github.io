@@ -4,6 +4,10 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #FFFFFF;
+}
+
 a,
 a:visited,
 a:hover,
