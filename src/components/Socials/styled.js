@@ -13,14 +13,15 @@ const StyledIcon = styled.a`
     }
 
     svg {
+      transform: scale(1.5);
       fill: ${LOGAN};
     }
   }
 
   svg {
-    will-change: fill;
-    transition: fill .3s;
-    fill: ${DARK_GRAY}
+    will-change: fill, transform;
+    transition: fill 0.3s, transform 0.3s;
+    fill: ${DARK_GRAY};
   }
 
   p {
