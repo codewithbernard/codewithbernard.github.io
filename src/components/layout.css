@@ -6,6 +6,32 @@ html {
 
 body {
   background-color: #FFFFFF;
+  margin: 0;
+}
+
+html,
+body,
+div#___gatsby,
+div#___gatsby>div {
+  height: 100%;
+}
+
+
+/** Layout */
+div#___gatsby>div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+@media screen and (min-device-width: 1200px) {
+  div#___gatsby>div {
+    padding: 0 10%;
+  }
+}
+
+main {
+  flex: 1;
 }
 
 a,

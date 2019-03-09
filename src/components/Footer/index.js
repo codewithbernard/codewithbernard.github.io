@@ -5,7 +5,7 @@ import { LOGAN } from "@constants/colors"
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>Stay hungry, Stay foolish</p>
+      <p>Screw it, let’s do it!</p>
       <p>BernardB. © {new Date().getFullYear()}</p>
     </StyledFooter>
   )
@@ -17,5 +17,6 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   color: ${LOGAN};
-  padding: 0 2em 1em 2em;
+  padding-bottom: 1em;
+  flex-shrink: 0;
 `
