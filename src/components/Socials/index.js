@@ -9,6 +9,9 @@ const Socials = () => {
         <Icon name="facebook" />
       </li>
       <li>
+        <Icon name="instagram" />
+      </li>
+      <li>
         <Icon name="github" />
       </li>
       <li>

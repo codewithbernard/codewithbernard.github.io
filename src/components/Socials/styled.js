@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { DARK_GRAY, LOGAN } from "@constants/colors"
+import { DARK_GRAY, MAYA_BLUE } from "@constants/colors"
 
 const StyledIcon = styled.a`
   display: flex;
@@ -9,12 +9,12 @@ const StyledIcon = styled.a`
 
   &:hover {
     p {
-      color: ${LOGAN};
+      color: ${MAYA_BLUE};
     }
 
     svg {
       transform: scale(1.5);
-      fill: ${LOGAN};
+      fill: ${MAYA_BLUE};
     }
   }
 

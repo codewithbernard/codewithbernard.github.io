@@ -99,4 +99,14 @@ const SocialsSection = styled.section`
   margin-bottom: 3rem;
 `
 
-export { Section, Introduction, Image, SocialsSection }
+const Buttons = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-device-width: 1200px) {
+    margin-top: 2rem;
+    justify-content: start;
+  }
+`
+
+export { Section, Introduction, Image, SocialsSection, Buttons }
