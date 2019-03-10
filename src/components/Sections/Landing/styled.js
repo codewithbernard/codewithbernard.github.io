@@ -5,10 +5,8 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
 
   @media screen and (min-device-width: 1200px) {
-    margin-top: 3rem;
     justify-content: space-between;
   }
 `

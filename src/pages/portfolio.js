@@ -6,7 +6,7 @@ import Landing from "@components/Sections/Landing"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
     <Landing />
   </Layout>
 )
