@@ -6,7 +6,7 @@ const Socials = () => {
   return (
     <StyledSocials>
       <li>
-        <Icon name="facebook"/>
+        <Icon name="facebook" />
       </li>
       <li>
         <Icon name="github" />

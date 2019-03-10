@@ -1,17 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "@components/layout"
+import Layout from "@components/Layout"
 import SEO from "@components/seo"
-import Button from "@UI/Button"
-import Socials from "@components/Socials"
+import Landing from "@components/sections/Landing"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Button>Say Hello</Button>
-    <Button transparent>Know more</Button>
-    <Socials />
+    <Landing />
   </Layout>
 )
 

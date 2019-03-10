@@ -38,6 +38,7 @@ const StyledSocials = styled.ul`
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 0;
 `
 
 export { StyledIcon, StyledSocials }
