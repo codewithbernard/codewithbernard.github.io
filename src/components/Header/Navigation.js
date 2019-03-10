@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { Nav } from "./styled"
 
 const options = [
-  { label: "Home", to: "home" },
+  { label: "Home", to: "/" },
   { label: "Portfolio", to: "portfolio" },
   { label: "Contact", to: "contact" },
   { label: "About Me ", to: "aboutMe" },
@@ -14,7 +14,9 @@ const Navigation = () => {
   const renderOptions = options.map(({ to, label }) => {
     return (
       <li>
-        <Link to={to}>{label}</Link>
+        <Link to={to} activeClassName="active">
+          {label}
+        </Link>
       </li>
     )
   })

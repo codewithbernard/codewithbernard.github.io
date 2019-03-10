@@ -26,6 +26,10 @@ const Nav = styled.nav`
           &:hover {
             color: ${COLORS.BLACK};
           }
+
+          &.active {
+            color: ${COLORS.SUMMER_SKY};
+          }
         }
       }
     }
