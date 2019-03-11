@@ -26,7 +26,13 @@ div#___gatsby>div {
 
 @media (min-width: 1025px) {
   div#___gatsby>div {
-    padding: 0 10%;
+    padding: 0 7%;
+  }
+}
+
+@media (min-width: 1281px) {
+  div#___gatsby>div {
+    padding: 0 17%;
   }
 }
 

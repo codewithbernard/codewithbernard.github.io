@@ -7,7 +7,7 @@ const options = [
   { label: "Home", to: "/" },
   { label: "Portfolio", to: "portfolio" },
   { label: "Contact", to: "contact" },
-  { label: "About Me ", to: "aboutMe" },
+  { label: "About Me ", to: "aboutme" },
 ]
 
 const Navigation = () => {

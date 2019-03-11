@@ -1,18 +1,20 @@
 import styled from "styled-components"
-import * as COLORS from "@constants/colors"
-
-const Section = styled.section``
 
 const Portfolios = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 2rem;
+
+  @media (min-width: 1025px) {
+    margin-top: 3rem;
+  }
 `
 
 const StyledPortfolioItem = styled.div`
   position: relative;
   height: 200px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,4 +68,4 @@ const StyledPortfolioItem = styled.div`
   }
 `
 
-export { Section, StyledPortfolioItem, Portfolios }
+export { StyledPortfolioItem, Portfolios }
