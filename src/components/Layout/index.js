@@ -24,7 +24,7 @@ export default Layout
 const Main = styled.main`
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 0 auto;
   margin-top: 1rem;
 
   @media (min-width: 1025px) {

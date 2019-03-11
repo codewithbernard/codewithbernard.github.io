@@ -42,6 +42,7 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  flex: 0 0 auto;
 
   @media (min-width: 1025px) {
     justify-content: space-between;

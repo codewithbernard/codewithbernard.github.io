@@ -17,8 +17,10 @@ const StyledPortfolioItem = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 0 1 45%;
   margin-bottom: 2rem;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100%;
 
   &::before {
     content: "";
@@ -40,6 +42,7 @@ const StyledPortfolioItem = styled.div`
 
   @media (min-width: 768px) {
     height: 272px;
+    flex-basis: 45%;
   }
 
   @media (min-width: 1025px) {
@@ -56,6 +59,10 @@ const StyledPortfolioItem = styled.div`
         opacity: 1;
       }
     }
+  }
+
+  @media (min-width: 1281px) {
+    flex-basis: 31%;
   }
 `
 
