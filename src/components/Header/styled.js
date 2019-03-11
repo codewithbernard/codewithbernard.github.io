@@ -4,7 +4,7 @@ import * as COLORS from "@constants/colors"
 const Nav = styled.nav`
   display: none;
 
-  @media screen and (min-device-width: 1200px) {
+  @media (min-width: 1025px) {
     display: initial;
 
     ul {
@@ -43,7 +43,7 @@ const StyledHeader = styled.header`
   align-items: center;
   margin-top: 1rem;
 
-  @media screen and (min-device-width: 1200px) {
+  @media (min-width: 1025px) {
     justify-content: space-between;
     margin-top: 2.5rem;
   }

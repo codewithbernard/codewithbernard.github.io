@@ -24,7 +24,7 @@ div#___gatsby>div {
   padding: 0 5%;
 }
 
-@media screen and (min-device-width: 1200px) {
+@media (min-width: 1025px) {
   div#___gatsby>div {
     padding: 0 10%;
   }

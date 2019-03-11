@@ -11,9 +11,11 @@ const ClassicButton = styled.button`
   padding: 14px 35px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  will-change: background-color;
-  transition: background-color 0.3s;
+  will-change: background-color, opacity;
+  transition: background-color 0.3s, opacity 0.3s;
   font-family: Poppins;
+  max-width: fit-content;
+  z-index: 3;
 
   &:hover {
     background-color: ${COLORS.SUMMER_SKY};
@@ -35,6 +37,8 @@ const TransparentButton = styled.button`
   will-change: color;
   transition: color 0.3s;
   font-family: Poppins;
+  max-width: fit-content;
+  z-index: 3;
 
   &:hover {
     color: ${COLORS.SUMMER_SKY};

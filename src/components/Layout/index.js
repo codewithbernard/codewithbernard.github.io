@@ -27,7 +27,7 @@ const Main = styled.main`
   flex: 1;
   margin-top: 1rem;
 
-  @media screen and (min-device-width: 1200px) {
+  @media (min-width: 1025px) {
     margin-top: 3rem;
   }
 `

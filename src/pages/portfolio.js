@@ -2,13 +2,13 @@ import React from "react"
 
 import Layout from "@components/Layout"
 import SEO from "@components/seo"
-import Landing from "@components/Sections/Landing"
+import Portfolio from "@components/Sections/Portfolio"
 
-const IndexPage = () => (
+const PortoflioPage = () => (
   <Layout>
     <SEO title="Portfolio" keywords={[`gatsby`, `application`, `react`]} />
-    <Landing />
+    <Portfolio />
   </Layout>
 )
 
-export default IndexPage
+export default PortoflioPage
