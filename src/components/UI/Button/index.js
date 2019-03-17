@@ -3,12 +3,16 @@ import PropTypes from "prop-types"
 
 import { ClassicButton, TransparentButton } from "./styled"
 
-const Button = ({ type, children, transparent, animate }) => {
+const Button = ({ type, children, transparent, animate, onClick }) => {
   if (transparent) {
-    return <TransparentButton type={type}>{children}</TransparentButton>
+    return (
+      <TransparentButton onClick={onClick} type={type}>
+        {children}
+      </TransparentButton>
+    )
   }
   return (
-    <ClassicButton animate={animate} type={type}>
+    <ClassicButton onClick={onClick} animate={animate} type={type}>
       {children}
     </ClassicButton>
   )
@@ -19,12 +23,14 @@ Button.propTypes = {
   transparent: PropTypes.bool,
   type: PropTypes.string,
   animate: PropTypes.bool,
+  onClick: PropTypes.func,
 }
 
 Button.defaultProps = {
   transparent: false,
   type: "button",
   animate: false,
+  onClick: () => null,
 }
 
 export default Button

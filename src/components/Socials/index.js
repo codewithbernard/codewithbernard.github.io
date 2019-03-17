@@ -10,10 +10,8 @@ const Socials = () => {
     <>
       <StyledSocials>
         {socialItems.map(({ name, link }, index) => (
-          <li key="index">
-            <a rel="noopener noreferrer" target="_blank" href={link}>
-              <Icon name={name} />
-            </a>
+          <li key={index}>
+            <Icon name={name} to={link} />
           </li>
         ))}
       </StyledSocials>

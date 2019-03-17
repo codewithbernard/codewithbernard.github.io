@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby"
 
 import Button from "@UI/Button"
 import Socials from "@components/Socials"
@@ -16,8 +17,12 @@ const Landing = () => {
           <H2>A Web Developer.</H2>
           <H3>Using ReactJs to build beautiful and modern websites</H3>
           <Buttons>
-            <Button animate>Say Hello</Button>
-            <Button transparent>Know More</Button>
+            <Button onClick={navigateToContant} animate>
+              Say Hello
+            </Button>
+            <Button onClick={navigateToPortfolio} transparent>
+              Know More
+            </Button>
           </Buttons>
         </Introduction>
         <Image>
@@ -29,6 +34,14 @@ const Landing = () => {
       </SocialsSection>
     </>
   )
+}
+
+const navigateToContant = () => {
+  navigate("/contact")
+}
+
+const navigateToPortfolio = () => {
+  navigate("/portfolio")
 }
 
 export default Landing

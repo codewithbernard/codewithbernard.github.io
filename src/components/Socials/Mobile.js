@@ -20,14 +20,10 @@ const Mobile = ({ socials }) => {
     <StyledMobile key={index}>
       <ul>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href={first.link}>
-            <Icon name={first.name} />
-          </a>
+          <Icon name={first.name} to={first.link} />
         </li>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href={second.link}>
-            <Icon name={second.name} />
-          </a>
+          <Icon name={second.name} to={second.link} />
         </li>
       </ul>
     </StyledMobile>

@@ -6,8 +6,8 @@ import SVG from "@UI/SVG"
 
 const Icon = ({ name, to }) => {
   return (
-    <StyledIcon>
-        <SVG name={name} />
+    <StyledIcon rel="noopener noreferrer" target="_blank" href={to}>
+      <SVG name={name} />
       <p>{name}</p>
     </StyledIcon>
   )
@@ -15,7 +15,7 @@ const Icon = ({ name, to }) => {
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired
+  to: PropTypes.string.isRequired,
 }
 
 export default Icon
