@@ -3,27 +3,21 @@ import { StyledSocials } from "./styled"
 import Icon from "./Icon"
 import Mobile from "./Mobile"
 
+import socialItems from "@constants/social"
+
 const Socials = () => {
   return (
     <>
       <StyledSocials>
-        <li>
-          <Icon name="facebook" />
-        </li>
-        <li>
-          <Icon name="instagram" />
-        </li>
-        <li>
-          <Icon name="github" />
-        </li>
-        <li>
-          <Icon name="medium" />
-        </li>
-        <li>
-          <Icon name="twitter" />
-        </li>
+        {socialItems.map(({ name, link }, index) => (
+          <li key="index">
+            <a rel="noopener noreferrer" target="_blank" href={link}>
+              <Icon name={name} />
+            </a>
+          </li>
+        ))}
       </StyledSocials>
-      <Mobile />
+      <Mobile socials={socialItems} />
     </>
   )
 }

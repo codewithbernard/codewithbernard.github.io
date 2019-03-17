@@ -3,9 +3,7 @@ import { StyledMobile } from "./styled"
 
 import Icon from "./Icon"
 
-const socials = ["facebook", "instagram", "twitter", "github", "medium"]
-
-const Mobile = () => {
+const Mobile = ({ socials }) => {
   let [count, setCount] = useState(0)
 
   useInterval(() => {
@@ -16,14 +14,20 @@ const Mobile = () => {
   const index = count % socials.length
   const secondIndex = (count + 1) % socials.length
 
+  const first = socials[index]
+  const second = socials[secondIndex]
   return (
     <StyledMobile key={index}>
       <ul>
         <li>
-          <Icon name={socials[index]} />
+          <a rel="noopener noreferrer" target="_blank" href={first.link}>
+            <Icon name={first.name} />
+          </a>
         </li>
         <li>
-          <Icon name={socials[secondIndex]} />
+          <a rel="noopener noreferrer" target="_blank" href={second.link}>
+            <Icon name={second.name} />
+          </a>
         </li>
       </ul>
     </StyledMobile>
