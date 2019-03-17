@@ -41,8 +41,15 @@ const Image = styled.div`
 `
 
 const SocialsSection = styled.section`
-  margin-top: auto;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    margin-top: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 5rem;
+  }
 `
 
 const Buttons = styled.div`
