@@ -16,7 +16,7 @@ const Landing = () => {
           <H2>A Web Developer.</H2>
           <H3>Using ReactJs to build beautiful and modern websites</H3>
           <Buttons>
-            <Button>Say Hello</Button>
+            <Button animate>Say Hello</Button>
             <Button transparent>Know More</Button>
           </Buttons>
         </Introduction>

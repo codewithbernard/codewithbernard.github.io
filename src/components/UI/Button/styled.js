@@ -1,7 +1,22 @@
-import styled from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import * as COLORS from "@constants/colors"
 
+const bubble = keyframes`
+  from {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+    border-width: 5px;
+  }
+
+  to {
+    transform: scaleX(1.3) scaleY(1.7);
+    opacity: 0;
+    border-width: 5px;
+  }
+`
+
 const ClassicButton = styled.button`
+  position: relative;
   background-color: ${COLORS.MAYA_BLUE};
   border-radius: 25px;
   font-weight: 300;
@@ -24,6 +39,23 @@ const ClassicButton = styled.button`
   &:focus {
     outline: none;
   }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 82%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-radius: inherit;
+    z-index: 2;
+    border: 0 solid ${COLORS.MAYA_BLUE};
+    ${props =>
+      props.animate &&
+      css`
+        animation: ${bubble} 1s 3 ease-in-out;
+      `}
 `
 
 const TransparentButton = styled.button`
