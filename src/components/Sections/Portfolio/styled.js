@@ -68,4 +68,8 @@ const StyledPortfolioItem = styled.div`
   }
 `
 
-export { StyledPortfolioItem, Portfolios }
+const EmptyItem = styled.div`
+  flex-basis: 31%;
+`
+
+export { StyledPortfolioItem, Portfolios, EmptyItem }
