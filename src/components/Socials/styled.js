@@ -1,5 +1,15 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { DARK_GRAY, MAYA_BLUE } from "@constants/colors"
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`
 
 const StyledIcon = styled.a`
   display: flex;
@@ -35,10 +45,31 @@ const StyledIcon = styled.a`
 `
 
 const StyledSocials = styled.ul`
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+  }
 `
 
-export { StyledIcon, StyledSocials }
+const StyledMobile = styled.div`
+  display: block;
+  animation: ${fadeIn} 2s;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+export { StyledIcon, StyledSocials, StyledMobile }

@@ -41,7 +41,7 @@ const Image = styled.div`
 `
 
 const SocialsSection = styled.section`
-  margin-top: 3rem;
+  margin-top: 4rem;
 
   @media (min-width: 481px) and (max-width: 767px) {
     margin-top: 3rem;
