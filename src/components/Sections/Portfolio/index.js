@@ -5,8 +5,8 @@ import { H2, H3 } from "@UI/Heading"
 import PortfolioItem from "@components/Sections/Portfolio/PortfolioItem"
 
 import firebase from "@assets/firebase.gif"
-import elite from "@assets/elite.png"
-import emaily from "@assets/emaily.png"
+import elite from "@assets/elite.gif"
+import emaily from "@assets/emaily.gif"
 
 const portoflioitems = [
   {
