@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import * as COLORS from "@constants/colors"
 
 const Portfolios = styled.div`
   display: flex;
@@ -34,11 +35,12 @@ const StyledPortfolioItem = styled.div`
     background-image: ${({ url }) => `url("${url}")`};
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     will-change: filter;
     transition: filter 0.3s;
   }
 
-  button:first-child {
+  a:first-child {
     margin-bottom: 1rem;
   }
 
@@ -48,7 +50,7 @@ const StyledPortfolioItem = styled.div`
   }
 
   @media (min-width: 1025px) {
-    button {
+    a {
       opacity: 0;
     }
 
@@ -57,7 +59,7 @@ const StyledPortfolioItem = styled.div`
         filter: blur(2px) brightness(85%);
       }
 
-      button {
+      a {
         opacity: 1;
       }
     }
@@ -68,8 +70,35 @@ const StyledPortfolioItem = styled.div`
   }
 `
 
+const Link = styled.a`
+  position: relative;
+  background-color: ${COLORS.MAYA_BLUE};
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: ${COLORS.WHITE};
+  border: none;
+  padding: 14px 35px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  will-change: background-color, opacity;
+  transition: background-color 0.3s, opacity 0.3s;
+  font-family: Poppins;
+  max-width: fit-content;
+  z-index: 3;
+
+  &:hover {
+    background-color: ${COLORS.SUMMER_SKY};
+  }
+
+  &:focus {
+    outline: none;
+  }
+`
+
 const EmptyItem = styled.div`
   flex-basis: 31%;
 `
 
-export { StyledPortfolioItem, Portfolios, EmptyItem }
+export { StyledPortfolioItem, Portfolios, EmptyItem, Link }
