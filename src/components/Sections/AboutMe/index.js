@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section>
       <H2>How it all started</H2>
-      <p>Bunch of text will go here</p>
+      <p>Awesome story coming soon...</p>
     </section>
   )
 }
