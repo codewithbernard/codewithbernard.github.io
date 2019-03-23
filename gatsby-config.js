@@ -17,6 +17,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,6 +39,7 @@ module.exports = {
           "@constants": path.resolve(__dirname, "src/constants"),
           "@UI": path.resolve(__dirname, "src/components/UI"),
           "@assets": path.resolve(__dirname, "src/assets"),
+          "@theme": path.resolve(__dirname, "src/theme"),
         },
         extensions: ["js"],
       },

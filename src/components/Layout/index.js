@@ -5,11 +5,11 @@ import styled from "styled-components"
 import Header from "@components/Header"
 import Footer from "@components/Footer"
 import Sidenav from "@components/Sidenav"
-
-import "./layout.css"
+import { GlobalStyle } from "@theme"
 
 const Layout = ({ children }) => (
   <>
+    <GlobalStyle />
     <Header />
     <Main>{children}</Main>
     <Sidenav />
