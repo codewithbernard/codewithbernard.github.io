@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import Header from "@components/Header"
 import Footer from "@components/Footer"
+import Sidenav from "@components/Sidenav"
 
 import "./layout.css"
 
@@ -11,6 +12,7 @@ const Layout = ({ children }) => (
   <>
     <Header />
     <Main>{children}</Main>
+    <Sidenav />
     <Footer />
   </>
 )

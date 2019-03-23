@@ -1,14 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { Nav } from "./styled"
 
-const options = [
-  { label: "Home", to: "/" },
-  { label: "Portfolio", to: "/portfolio" },
-  { label: "Contact", to: "/contact" },
-  { label: "About Me ", to: "/aboutme" },
-]
+import options from "@constants/options"
 
 const Navigation = () => {
   const renderOptions = options.map(({ to, label }) => {
