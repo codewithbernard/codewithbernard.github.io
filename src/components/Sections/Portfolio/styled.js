@@ -24,6 +24,7 @@ const StyledPortfolioItem = styled.div`
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 100%;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -42,6 +43,24 @@ const StyledPortfolioItem = styled.div`
 
   a:first-child {
     margin-bottom: 1rem;
+  }
+
+  @media (max-width: 1025px) {
+    a {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &.active {
+      &::before {
+        filter: blur(2px) brightness(85%);
+      }
+
+      a {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
   }
 
   @media (min-width: 768px) {

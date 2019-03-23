@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import { Portfolios, EmptyItem } from "./styled"
 import { H2, H3 } from "@UI/Heading"
@@ -25,13 +25,22 @@ const portoflioitems = [
 ]
 
 const Portfolio = () => {
+  const [active, setActive] = useState("")
+
   return (
     <section>
       <H2>My Portfolio</H2>
       <H3>Majority of the these web applications were developed using React</H3>
       <Portfolios>
         {portoflioitems.map(({ link, code, live }, index) => (
-          <PortfolioItem key={index} url={link} code={code} live={live} />
+          <PortfolioItem
+            className={active === index ? "active" : ""}
+            onClick={() => setActive(index)}
+            key={index}
+            url={link}
+            code={code}
+            live={live}
+          />
         ))}
         {portoflioitems.length % 3 === 2 ? <EmptyItem /> : null}
       </Portfolios>
