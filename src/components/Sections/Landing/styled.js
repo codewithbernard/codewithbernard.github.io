@@ -5,6 +5,8 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 
   @media (min-width: 1025px) {
     justify-content: space-between;
@@ -41,15 +43,8 @@ const Image = styled.div`
 `
 
 const SocialsSection = styled.section`
-  margin-top: 4rem;
-
-  @media (min-width: 481px) and (max-width: 767px) {
-    margin-top: 3rem;
-  }
-
-  @media (min-width: 768px) {
-    margin-top: 5rem;
-  }
+  margin-top: auto;
+  margin-bottom: 2rem;
 `
 
 const Buttons = styled.div`
