@@ -7,6 +7,7 @@ module.exports = {
     author: `@codewithbernard`,
   },
   plugins: [
+    `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,6 +41,7 @@ module.exports = {
           "@UI": path.resolve(__dirname, "src/components/UI"),
           "@assets": path.resolve(__dirname, "src/assets"),
           "@theme": path.resolve(__dirname, "src/theme"),
+          "@layouts": path.resolve(__dirname, "src/layouts"),
         },
         extensions: ["js"],
       },
