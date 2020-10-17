@@ -44,5 +44,14 @@ const GlobalStyle = createGlobalStyle`
     a:focus {
     text-decoration: none;
     }
+
+    .views, .view, .view-container {
+        height: 100%;
+    }
+
+    .view {
+        display: flex;
+        flex-direction: column;
+    }
 `
 export { GlobalStyle }

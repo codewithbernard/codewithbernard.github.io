@@ -1,17 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions"
 
 import Header from "@components/Header"
 import Footer from "@components/Footer"
 import Sidenav from "@components/Sidenav"
 import { GlobalStyle } from "@theme"
 
-const Layout = ({ children }) => (
+const Layout = ({ location, children }) => (
   <>
     <GlobalStyle />
     <Header />
-    <Main>{children}</Main>
+    <Main>
+      <TransitionProvider location={location} style={{ height: "100%" }}>
+        <TransitionViews>{children}</TransitionViews>
+      </TransitionProvider>
+    </Main>
     <Sidenav />
     <Footer />
   </>
